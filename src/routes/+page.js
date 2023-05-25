@@ -16,7 +16,7 @@ export async function load() {
     if (data) {
     
         return {
-        periodesystem: data
+        grs: data
         
         };
     }
