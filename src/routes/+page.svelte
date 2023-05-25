@@ -9,8 +9,11 @@
 <div id="top">
     <p>SØK:</p>
     <input type="text" placeholder="2, He, Helium...">
-    <button>(?)</button>
+    <button type="button" on:click={info}>
+        (?)
+    </button>
 </div>
+  
 
 <div id="mid">
     <div id="elbox">
@@ -48,11 +51,17 @@
     </div>
 </div>
 
+<!-- <br><br><br><br><br>
+<img src="src/routes/periodesystemet.png" alt="periodesystemet" id="periodesystem"> -->
 
 <script>
     export let data;
 
     console.log(data.grs)
+    
+    function info() {
+        alert("hei");
+    }
 </script>
 
 <style>
@@ -102,6 +111,9 @@
         bottom: 0%;
         left: 50%;
         transform: translate(-50%, 0%);
+    }
+    #periodesystem{
+        width: 500px;
     }
 
 </style>
